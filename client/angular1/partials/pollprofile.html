@@ -1,0 +1,21 @@
+<div ng-controller="Profile">
+	<a href="#/Dashboard">Go to Polls</a>
+	<h3>{{question}}</h3>
+	<p>Click the Vote button to choose one.</p>
+	<table border="1" style="margin: 10px;">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Current Count of Votes</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="o in options">
+				<td>{{o.option}}</td>
+				<td>{{o.vote}}</td>
+				<td><button ng-click="voteOption(o)">Vote</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

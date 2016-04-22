@@ -1,0 +1,14 @@
+<div ng-controller="Home">
+	<form id="login">
+		<h3 text-decoration="underline">Login</h3>
+		<p>Your Name: <input ng-model="user.name1" type="text"></p>
+		<p><input type="submit" value="Login" ng-click="loginUser(user)"></p>
+	</form>
+
+	<form id="register">
+		<h3 text-decoration="underline">Register</h3>
+		<p>Name: <input ng-model="user.name2" type="text"></p>
+		<p>Email: <input ng-model="user.email" type="text"></p>
+		<p><input type="submit" value="Register" ng-click="registerUser(user)"></p>
+	</form>
+</div>
